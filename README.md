@@ -9,6 +9,7 @@ This repository contains the code for the "Getting and Cleaning Data" course of 
     setwd(<localPath>)
     ```
 3. Install the required package `dplyr`, if you've never install it before in your current environment
+
     ```{r}
     install.packages("dplyr")
     ```
