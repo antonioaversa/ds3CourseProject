@@ -8,7 +8,11 @@ This repository contains the code for the "Getting and Cleaning Data" course of 
 	```{r}
     setwd(<localPath>)
     ```
-3. Download the zipped file containing the data from "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", and extract its content under <localPath>. You can do it either manually or by executing the "retrieve_data.R" script.
+3. Install the required package `dplyr`, if you've never install it before in your current environment
+    ```{r}
+    install.packages("dplyr")
+    ```
+4. Download the zipped file containing the data from "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", and extract its content under <localPath>. You can do it either manually or by executing the "retrieve_data.R" script.
     
 	```{r}
     source("retrieve_data.R")
@@ -23,20 +27,20 @@ This repository contains the code for the "Getting and Cleaning Data" course of 
     |- run_analysis.R
     |- README.md
     |- UCI HAR Dataset
-    |- test
-    |  |- ...
-    |
-    |- train
-    |  |- ...
-    |
-    |- activity_labels.txt
-    |- features.txt
-    |- features_info.txt
-    |- README.txt
+       |- test
+       |  |- ...
+       |
+       |- train
+       |  |- ...
+       |
+       |- activity_labels.txt
+       |- features.txt
+       |- features_info.txt
+       |- README.txt
     ```
-4. Run the "run_analysis.R" script, to perform the data cleaning process and generate the tidy dataset
+5. Run the "run_analysis.R" script, to perform the data cleaning process and generate the tidy dataset
     
 	```{r}
     source("run_analysis.R")
     ```
-5. The tidy dataset generated is at "`<localPath>`/dataset_byActivityAndSubject.txt"
+6. The tidy dataset generated is at "`<localPath>`/dataset_byActivityAndSubject.txt"

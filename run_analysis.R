@@ -1,4 +1,3 @@
-library(data.table);
 library(dplyr);
 
 localSubFolder = "UCI HAR Dataset";
