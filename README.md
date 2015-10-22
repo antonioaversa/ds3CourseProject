@@ -12,4 +12,26 @@ setwd(<localPath>)
 source("retrieve_data.R")
 retrieve_data()
 ```
-4. Run the "run_analysis.R" script, to perform the data cleaning process and generate the 
+Your working directory should like like:
+```{r}
+<localPath>
+|- retrieve_data.R
+|- run_analysis.R
+|- README.md
+|- UCI HAR Dataset
+   |- test
+   |  |- ...
+   |
+   |- train
+   |  |- ...
+   |
+   |- activity_labels.txt
+   |- features.txt
+   |- features_info.txt
+   |- README.txt
+```
+4. Run the "run_analysis.R" script, to perform the data cleaning process and generate the tidy dataset
+```{r}
+source("run_analysis.R")
+```
+5. The tidy dataset generated is at "<localPath>/dataset_byActivityAndSubject.txt"
