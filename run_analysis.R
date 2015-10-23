@@ -21,24 +21,22 @@ subject_train_path = file.path(localSubFolder, "train", "subject_train.txt");
 activity_labels_path = file.path(localSubFolder, "activity_labels.txt");
 features_path = file.path(localSubFolder, "features.txt");
 
-nrows = 10000;
-
 # 1. Merges the training and the test sets to create one data set.
 # Remark: here 3 different merges are performed, for X, y and subject.
 # The complete data set is create at the end of Step 4.
 X_train_sample <- read.table(X_train_path, nrows = 1);
 X_train_colClasses <- sapply(X_train_sample, class);
 
-X_train <- read.table(X_train_path, colClasses = X_train_colClasses, nrows = nrows);
-X_test <- read.table(X_test_path, colClasses = X_train_colClasses, nrows = nrows);
+X_train <- read.table(X_train_path, colClasses = X_train_colClasses);
+X_test <- read.table(X_test_path, colClasses = X_train_colClasses);
 X_total <- rbind(X_train, X_test);
 
-y_train <- read.table(y_train_path, nrows = nrows);
-y_test <- read.table(y_test_path, nrows = nrows);
+y_train <- read.table(y_train_path);
+y_test <- read.table(y_test_path);
 y_total <- rbind(y_train, y_test);
 
-subject_train <- read.table(subject_train_path, nrows = nrows);
-subject_test <- read.table(subject_test_path, nrows = nrows);
+subject_train <- read.table(subject_train_path);
+subject_test <- read.table(subject_test_path);
 subject_total <- rbind(subject_train, subject_test);
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
