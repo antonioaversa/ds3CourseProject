@@ -30,6 +30,7 @@ The original dataset has been retrieved from the following url: `https://d396qus
 Then it has been extracted and processed.
 
 Check the README.md for futher information concerning how you can prepare the environment needed to run the `run_analysis.R` script. 
+
 The README.md describes also in finer detail the performed data processing tasks, which are summarized hereafter:
 1. data (X, y, subject) is loaded from the `UCI HAR Dataset` folder into R data frames
 2. train and test datasets are merged, generating total datasets
