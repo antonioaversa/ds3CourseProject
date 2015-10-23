@@ -48,6 +48,7 @@ This repository contains the code for the "Getting and Cleaning Data" course of 
 
 ## Steps performed by the run_analysis.R script
 The `run_analysis.R` script, executed at step 5 of the tidy dataset generation process, performs the following operation on the data:
+
 1. data are loaded from the `UCI HAR Dataset` folder into R data frames
 2. `X_train` and `X_test`, `y_train` and `y_test`, `subject_train` and `subject_test` are merged by rows, obtaining `X_total`, `y_total` and `subject_total`
 3. the feature list is loaded into a `features` data frame, and the name of the features of type mean and std are extracted from it
