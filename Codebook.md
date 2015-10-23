@@ -62,74 +62,74 @@ The data processing tasks performed by `run_analysis.R` on the original dataset 
 - some subject have been observed while performing several activities: those cases are mapped as different observations
 - for each couple (subject, activity) 33 mean summary values and 33 std summary values, for various variables, are reported
 
- ###Columns
- The final dataset consist of the following columns:
- - subject: numerical: 1..30. The subject the observation was taken of;
- - activity: factor: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. The activity the subject was performing when the observation was recorded;
- - tBodyAcc-mean()-X: numeric. The mean of the body acceleration on the X-axis in the time domain.
- - tBodyAcc-mean()-Y: numeric. The mean of the body acceleration on the Y-axis in the time domain.
- - tBodyAcc-mean()-Z: numeric. The mean of the body acceleration on the Z-axis in the time domain.
- - tBodyAcc-std()-X: numeric. The std of the body acceleration on the X-axis in the time domain.
- - tBodyAcc-std()-Y: numeric. The std of the body acceleration on the Y-axis in the time domain.
- - tBodyAcc-std()-Z: numeric. The std of the body acceleration on the Z-axis in the time domain.
- - tGravityAcc-mean()-X: numeric. The mean of the gravity acceleration on the X-axis in the time domain.
- - tGravityAcc-mean()-Y: numeric. The mean of the gravity acceleration on the Y-axis in the time domain.
- - tGravityAcc-mean()-Z: numeric. The mean of the gravity acceleration on the Z-axis in the time domain.
- - tGravityAcc-std()-X: numeric. The std of the gravity acceleration on the X-axis in the time domain.
- - tGravityAcc-std()-Y: numeric. The std of the gravity acceleration on the Y-axis in the time domain.
- - tGravityAcc-std()-Z: numeric. The std of the gravity acceleration on the Z-axis in the time domain.
- - tBodyAccJerk-mean()-X: numeric. The mean of the Jerk signal for body acceleration on the X-axis in the time domain.
- - tBodyAccJerk-mean()-Y: numeric. The mean of the Jerk signal for body acceleration on the Y-axis in the time domain.
- - tBodyAccJerk-mean()-Z: numeric. The mean of the Jerk signal for body acceleration on the Z-axis in the time domain.
- - tBodyAccJerk-std()-X: numeric. The std of the Jerk signal for body acceleration on the X-axis in the time domain.
- - tBodyAccJerk-std()-Y: numeric. The std of the Jerk signal for body acceleration on the Y-axis in the time domain.
- - tBodyAccJerk-std()-Z: numeric. The std of the Jerk signal for body acceleration on the Z-axis in the time domain.
- - tBodyGyro-mean()-X: numeric. The mean of the body gyroscope 3-axial signal on the X-axis in the time domain.
- - tBodyGyro-mean()-Y: numeric. The mean of the body gyroscope 3-axial signal on the Y-axis in the time domain.
- - tBodyGyro-mean()-Z: numeric. The mean of the body gyroscope 3-axial signal on the Z-axis in the time domain.
- - tBodyGyro-std()-X: numeric. The std of the body gyroscope 3-axial signal on the X-axis in the time domain.
- - tBodyGyro-std()-Y: numeric. The std of the body gyroscope 3-axial signal on the Y-axis in the time domain.
- - tBodyGyro-std()-Z: numeric. The std of the body gyroscope 3-axial signal on the Z-axis in the time domain.
- - tBodyGyroJerk-mean()-X: numeric. The mean of the Jerk signal for body gyroscope 3-axial on the X-axis in the time domain.
- - tBodyGyroJerk-mean()-Y: numeric. The mean of the Jerk signal for body gyroscope 3-axial on the Y-axis in the time domain.
- - tBodyGyroJerk-mean()-Z: numeric. The mean of the Jerk signal for body gyroscope 3-axial on the Z-axis in the time domain.
- - tBodyGyroJerk-std()-X: numeric. The std of the Jerk signal for body gyroscope 3-axial on the X-axis in the time domain.
- - tBodyGyroJerk-std()-Y: numeric. The std of the Jerk signal for body gyroscope 3-axial on the Y-axis in the time domain.
- - tBodyGyroJerk-std()-Z: numeric. The std of the Jerk signal for body gyroscope 3-axial on the Z-axis in the time domain.
- - tBodyAccMag-mean(): numeric. The mean of the body acceleration magnitude (using the Euclidean norm) in the time domain.
- - tBodyAccMag-std(): numeric. The std of the body acceleration magnitude (using the Euclidean norm) in the time domain.
- - tGravityAccMag-mean(): numeric. The mean of the gravity acceleration magnitude (using the Euclidean norm) in the time domain.
- - tGravityAccMag-std(): numeric. The std of the gravity acceleration magnitude (using the Euclidean norm) in the time domain.
- - tBodyAccJerkMag-mean(): numeric. The mean of the Jerk signal for gravity acceleration magnitude (using the Euclidean norm) in the time domain.
- - tBodyAccJerkMag-std(): numeric. The std of the Jerk signal for gravity acceleration magnitude (using the Euclidean norm) in the time domain.
- - tBodyGyroMag-mean(): numeric. The mean of the body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
- - tBodyGyroMag-std(): numeric. The std of the body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
- - tBodyGyroJerkMag-mean(): numeric. The mean of the Jerk signal for body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
- - tBodyGyroJerkMag-std(): numeric. The std of the Jerk signal for body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
- - fBodyAcc-mean()-X: numeric. The mean of the body acceleration on the X-axis in the frequency domain.
- - fBodyAcc-mean()-Y: numeric. The mean of the body acceleration on the Y-axis in the frequency domain.
- - fBodyAcc-mean()-Z: numeric. The mean of the body acceleration on the Z-axis in the frequency domain.
- - fBodyAcc-std()-X: numeric. The std of the body acceleration on the X-axis in the frequency domain.
- - fBodyAcc-std()-Y: numeric. The std of the body acceleration on the Y-axis in the frequency domain.
- - fBodyAcc-std()-Z: numeric. The std of the body acceleration on the Z-axis in the frequency domain.
- - fBodyAccJerk-mean()-X: numeric. The mean of the Jerk signal for body acceleration on the X-axis in the frequency domain.
- - fBodyAccJerk-mean()-Y: numeric. The mean of the Jerk signal for body acceleration on the Y-axis in the frequency domain.
- - fBodyAccJerk-mean()-Z: numeric. The mean of the Jerk signal for body acceleration on the Z-axis in the frequency domain.
- - fBodyAccJerk-std()-X: numeric. The std of the Jerk signal for body acceleration on the X-axis in the frequency domain.
- - fBodyAccJerk-std()-Y: numeric. The std of the Jerk signal for body acceleration on the Y-axis in the frequency domain.
- - fBodyAccJerk-std()-Z: numeric. The std of the Jerk signal for body acceleration on the Z-axis in the frequency domain.
- - fBodyGyro-mean()-X: numeric. The mean of the body gyroscope 3-axial signal on the X-axis in the frequency domain.
- - fBodyGyro-mean()-Y: numeric. The mean of the body gyroscope 3-axial signal on the Y-axis in the frequency domain.
- - fBodyGyro-mean()-Z: numeric. The mean of the body gyroscope 3-axial signal on the Z-axis in the frequency domain.
- - fBodyGyro-std()-X: numeric. The std of the body gyroscope 3-axial signal on the X-axis in the frequency domain.
- - fBodyGyro-std()-Y: numeric. The std of the body gyroscope 3-axial signal on the Y-axis in the frequency domain.
- - fBodyGyro-std()-Z: numeric. The std of the body gyroscope 3-axial signal on the Z-axis in the frequency domain.
- - fBodyAccMag-mean(): numeric. The mean of the body acceleration magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyAccMag-std(): numeric. The std of the body acceleration magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyBodyAccJerkMag-mean(): numeric. The mean of the Jerk signal for body acceleration magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyBodyAccJerkMag-std(): numeric. The std of the Jerk signal for body acceleration magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyBodyGyroMag-mean(): numeric. The mean of body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyBodyGyroMag-std(): numeric. The std of body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyBodyGyroJerkMag-mean(): numeric. The mean of the Jerk signal for body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
- - fBodyBodyGyroJerkMag-std(): numeric. The std of the Jerk signal for body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
+###Columns
+The final dataset consist of the following columns:
+- subject: numerical: 1..30. The subject the observation was taken of;
+- activity: factor: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. The activity the subject was performing when the observation was recorded;
+- tBodyAcc-mean()-X: numeric. The mean of the body acceleration on the X-axis in the time domain.
+- tBodyAcc-mean()-Y: numeric. The mean of the body acceleration on the Y-axis in the time domain.
+- tBodyAcc-mean()-Z: numeric. The mean of the body acceleration on the Z-axis in the time domain.
+- tBodyAcc-std()-X: numeric. The std of the body acceleration on the X-axis in the time domain.
+- tBodyAcc-std()-Y: numeric. The std of the body acceleration on the Y-axis in the time domain.
+- tBodyAcc-std()-Z: numeric. The std of the body acceleration on the Z-axis in the time domain.
+- tGravityAcc-mean()-X: numeric. The mean of the gravity acceleration on the X-axis in the time domain.
+- tGravityAcc-mean()-Y: numeric. The mean of the gravity acceleration on the Y-axis in the time domain.
+- tGravityAcc-mean()-Z: numeric. The mean of the gravity acceleration on the Z-axis in the time domain.
+- tGravityAcc-std()-X: numeric. The std of the gravity acceleration on the X-axis in the time domain.
+- tGravityAcc-std()-Y: numeric. The std of the gravity acceleration on the Y-axis in the time domain.
+- tGravityAcc-std()-Z: numeric. The std of the gravity acceleration on the Z-axis in the time domain.
+- tBodyAccJerk-mean()-X: numeric. The mean of the Jerk signal for body acceleration on the X-axis in the time domain.
+- tBodyAccJerk-mean()-Y: numeric. The mean of the Jerk signal for body acceleration on the Y-axis in the time domain.
+- tBodyAccJerk-mean()-Z: numeric. The mean of the Jerk signal for body acceleration on the Z-axis in the time domain.
+- tBodyAccJerk-std()-X: numeric. The std of the Jerk signal for body acceleration on the X-axis in the time domain.
+- tBodyAccJerk-std()-Y: numeric. The std of the Jerk signal for body acceleration on the Y-axis in the time domain.
+- tBodyAccJerk-std()-Z: numeric. The std of the Jerk signal for body acceleration on the Z-axis in the time domain.
+- tBodyGyro-mean()-X: numeric. The mean of the body gyroscope 3-axial signal on the X-axis in the time domain.
+- tBodyGyro-mean()-Y: numeric. The mean of the body gyroscope 3-axial signal on the Y-axis in the time domain.
+- tBodyGyro-mean()-Z: numeric. The mean of the body gyroscope 3-axial signal on the Z-axis in the time domain.
+- tBodyGyro-std()-X: numeric. The std of the body gyroscope 3-axial signal on the X-axis in the time domain.
+- tBodyGyro-std()-Y: numeric. The std of the body gyroscope 3-axial signal on the Y-axis in the time domain.
+- tBodyGyro-std()-Z: numeric. The std of the body gyroscope 3-axial signal on the Z-axis in the time domain.
+- tBodyGyroJerk-mean()-X: numeric. The mean of the Jerk signal for body gyroscope 3-axial on the X-axis in the time domain.
+- tBodyGyroJerk-mean()-Y: numeric. The mean of the Jerk signal for body gyroscope 3-axial on the Y-axis in the time domain.
+- tBodyGyroJerk-mean()-Z: numeric. The mean of the Jerk signal for body gyroscope 3-axial on the Z-axis in the time domain.
+- tBodyGyroJerk-std()-X: numeric. The std of the Jerk signal for body gyroscope 3-axial on the X-axis in the time domain.
+- tBodyGyroJerk-std()-Y: numeric. The std of the Jerk signal for body gyroscope 3-axial on the Y-axis in the time domain.
+- tBodyGyroJerk-std()-Z: numeric. The std of the Jerk signal for body gyroscope 3-axial on the Z-axis in the time domain.
+- tBodyAccMag-mean(): numeric. The mean of the body acceleration magnitude (using the Euclidean norm) in the time domain.
+- tBodyAccMag-std(): numeric. The std of the body acceleration magnitude (using the Euclidean norm) in the time domain.
+- tGravityAccMag-mean(): numeric. The mean of the gravity acceleration magnitude (using the Euclidean norm) in the time domain.
+- tGravityAccMag-std(): numeric. The std of the gravity acceleration magnitude (using the Euclidean norm) in the time domain.
+- tBodyAccJerkMag-mean(): numeric. The mean of the Jerk signal for gravity acceleration magnitude (using the Euclidean norm) in the time domain.
+- tBodyAccJerkMag-std(): numeric. The std of the Jerk signal for gravity acceleration magnitude (using the Euclidean norm) in the time domain.
+- tBodyGyroMag-mean(): numeric. The mean of the body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
+- tBodyGyroMag-std(): numeric. The std of the body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
+- tBodyGyroJerkMag-mean(): numeric. The mean of the Jerk signal for body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
+- tBodyGyroJerkMag-std(): numeric. The std of the Jerk signal for body gyroscope 3-axial magnitude (using the Euclidean norm) in the time domain.
+- fBodyAcc-mean()-X: numeric. The mean of the body acceleration on the X-axis in the frequency domain.
+- fBodyAcc-mean()-Y: numeric. The mean of the body acceleration on the Y-axis in the frequency domain.
+- fBodyAcc-mean()-Z: numeric. The mean of the body acceleration on the Z-axis in the frequency domain.
+- fBodyAcc-std()-X: numeric. The std of the body acceleration on the X-axis in the frequency domain.
+- fBodyAcc-std()-Y: numeric. The std of the body acceleration on the Y-axis in the frequency domain.
+- fBodyAcc-std()-Z: numeric. The std of the body acceleration on the Z-axis in the frequency domain.
+- fBodyAccJerk-mean()-X: numeric. The mean of the Jerk signal for body acceleration on the X-axis in the frequency domain.
+- fBodyAccJerk-mean()-Y: numeric. The mean of the Jerk signal for body acceleration on the Y-axis in the frequency domain.
+- fBodyAccJerk-mean()-Z: numeric. The mean of the Jerk signal for body acceleration on the Z-axis in the frequency domain.
+- fBodyAccJerk-std()-X: numeric. The std of the Jerk signal for body acceleration on the X-axis in the frequency domain.
+- fBodyAccJerk-std()-Y: numeric. The std of the Jerk signal for body acceleration on the Y-axis in the frequency domain.
+- fBodyAccJerk-std()-Z: numeric. The std of the Jerk signal for body acceleration on the Z-axis in the frequency domain.
+- fBodyGyro-mean()-X: numeric. The mean of the body gyroscope 3-axial signal on the X-axis in the frequency domain.
+- fBodyGyro-mean()-Y: numeric. The mean of the body gyroscope 3-axial signal on the Y-axis in the frequency domain.
+- fBodyGyro-mean()-Z: numeric. The mean of the body gyroscope 3-axial signal on the Z-axis in the frequency domain.
+- fBodyGyro-std()-X: numeric. The std of the body gyroscope 3-axial signal on the X-axis in the frequency domain.
+- fBodyGyro-std()-Y: numeric. The std of the body gyroscope 3-axial signal on the Y-axis in the frequency domain.
+- fBodyGyro-std()-Z: numeric. The std of the body gyroscope 3-axial signal on the Z-axis in the frequency domain.
+- fBodyAccMag-mean(): numeric. The mean of the body acceleration magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyAccMag-std(): numeric. The std of the body acceleration magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyBodyAccJerkMag-mean(): numeric. The mean of the Jerk signal for body acceleration magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyBodyAccJerkMag-std(): numeric. The std of the Jerk signal for body acceleration magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyBodyGyroMag-mean(): numeric. The mean of body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyBodyGyroMag-std(): numeric. The std of body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyBodyGyroJerkMag-mean(): numeric. The mean of the Jerk signal for body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
+- fBodyBodyGyroJerkMag-std(): numeric. The std of the Jerk signal for body gyroscope 3-axial signal magnitude (using the Euclidean norm) in the frequency domain.
 
