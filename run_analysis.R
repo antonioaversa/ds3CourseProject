@@ -52,14 +52,11 @@ activity_labels <- read.table(activity_labels_path);
 colnames(activity_labels) <- c("activity_id", "activity");
 
 # 4. Appropriately labels the data set with descriptive variable names.
-y_label <- "activity_id";
-colnames(y_total) <- c(y_label);
 subject_label <- "subject";
 colnames(subject_total) <- c(subject_label);
-activity_total <- merge(y_total, activity_labels, by = "activity_id")["activity"];
-
+activity_total <- sapply(y_total$V1, function(activity_id) activity_labels$activity[activity_id]);
 # COMPLETE DATA SET
-dataset <- cbind(X_total_projected, activity_total, subject_total);
+dataset <- cbind(X_total_projected, activity = activity_total, subject_total);
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average
 # of each variable for each activity and each subject.

@@ -57,7 +57,7 @@ The data processing tasks performed by `run_analysis.R` on the original dataset 
 - the final dataset is an R data frame, persisted as a text space-separated file, named `dataset_byActivityAndSubject.txt`
 - the row names are not stored in the file
 - the first line of the file contains the column names
-- the data consists of 35 observations of 68 variables
+- the data consists of 180 observations of 68 variables
 - an observation is associated to one of the 30 subjects, indicated with ids from 1 to 30
 - the observation took place when the subject was performing a particular activity: WALKING, SITTING, etc...
 - some subject have been observed while performing several activities: those cases are mapped as different observations
